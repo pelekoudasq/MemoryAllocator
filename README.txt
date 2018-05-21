@@ -7,9 +7,11 @@ assignment for Operating Systems (F17/Κ22) Prof. Yannis Smaragdakis
 Ο παρών φάκελος περιέχει τα αρχεία allocator.c, allocator.h και ένα πρόγραμμα test.c για να ελέγχει τον allocator.
 Το αρχείο πηγαίου κώδικα allocator.c περιέχει τις εξής συναρτήσεις:
 τις κύριες συναρτήσεις που ξέρει και χρησιμοποιεί ο χρήστης
-void *mymalloc(size_t cbytes) και void myfree(void* ad ), 
+
+void *mymalloc(size_t cbytes); και void myfree(void* ad ); 
 
 αλλά και τις βοηθητικές:
+
 void newNodeDomis(Domi **L, int bit_vector_size, int klasi);
 void allocateOneMegabyte();
 void *lookForZero(Domi **L, int bit_vector_size, int klasi);
