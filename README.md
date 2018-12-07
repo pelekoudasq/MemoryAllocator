@@ -10,7 +10,7 @@
 τις κύριες συναρτήσεις που ξέρει και χρησιμοποιεί ο χρήστης
 ```C
 void *mymalloc(size_t cbytes);
-void myfree(void* ad ); 
+void myfree(void* address); 
 ```
 
 αλλά και τις βοηθητικές:
