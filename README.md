@@ -1,20 +1,25 @@
-MemoryAllocator
-assignment for Operating Systems (F17/Κ22) Prof. Yannis Smaragdakis
+# Optimized Memory Allocator
+### assignment for Operating Systems (F17/Κ22) Prof. Yannis Smaragdakis
 
-Λειτουργικά Συστήματα, Κ22, Άσκηση 1
-Πελεκούδας Ιωάννης, ΑΜ: 1115201500128
+#### Λειτουργικά Συστήματα, Κ22, Άσκηση 1
+#### Πελεκούδας Ιωάννης, ΑΜ: 1115201500128
 
 Ο παρών φάκελος περιέχει τα αρχεία allocator.c, allocator.h και ένα πρόγραμμα test.c για να ελέγχει τον allocator.
 Το αρχείο πηγαίου κώδικα allocator.c περιέχει τις εξής συναρτήσεις:
 
 τις κύριες συναρτήσεις που ξέρει και χρησιμοποιεί ο χρήστης
-void *mymalloc(size_t cbytes); και void myfree(void* ad ); 
+```C
+void *mymalloc(size_t cbytes);
+void myfree(void* ad ); 
+```
 
 αλλά και τις βοηθητικές:
+```C
 void newNodeDomis(Domi **L, int bit_vector_size, int klasi);
 void allocateOneMegabyte();
 void *lookForZero(Domi **L, int bit_vector_size, int klasi);
 int ipow(int base, int exp);
+```
 
 Αναλυτικότερα, η συνάρτηση mymalloc ελέγχει το μέγεθος της μνήμης που αιτείται ο χρήστης όπως αναφέρεται στην εκφώνηση.
 Αν cbytes > 4096, καλεί την παραδοσιακή malloc και επιστρέφει την διεύθυνση που επιστρέφει. 
